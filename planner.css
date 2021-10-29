@@ -22,7 +22,7 @@ h1 {
 }
 
 .whiteText{
-  color:white:
+  color:rgb(88, 54, 29);:
 }
 
 #activeSkillNameAndLevel {
@@ -39,7 +39,7 @@ h1 {
   width:90px;
   font-size:25px;
   background: rgba(0, 0, 0, 0.0);
-  color:white;
+  color:rgb(88, 54, 29);
   text-align:right;
 }
 
@@ -50,7 +50,7 @@ h1 {
   background:lightyellow;
   padding:5px;
   border:1px solid black;
-  color:black;
+  color:rgb(88, 54, 29);
   
 }
 
@@ -79,9 +79,8 @@ h1 {
   border: 1px solid black;
   display: flex;
   padding: 3px;
-  background-color:slateblue;
-  color:white;
-  border-radius:25px;
+  background-image:url("paperTex.jpg");
+  color:rgb(88, 54, 29);;
 }
 
 #activeSkillDisplaySVG {
@@ -101,8 +100,8 @@ h1 {
   width:40%;
   min-width:400px;
   margin:5px;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
+  border-left: 2px solid rgb(172, 130, 99);
+  border-right: 2px solid rgb(172, 130, 99);
 }
 
 #leftSkillDisplayDiv {

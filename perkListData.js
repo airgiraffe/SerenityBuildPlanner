@@ -176,271 +176,347 @@ perks : [
   {name : "Drain<br>Willpower", skill : 1, skillReq : 100,
    xPos : 260/3, yPos : 50/4, preReqs : [34], nextPerk: 33,
    description : "Your drain life spells now sap the willpower from your foes, draining magicka as well."},
-   //28
+   //36
   {name : "Improved Blocking", skill : 2, skillReq : 0,
    xPos : 150/3, yPos : 323/4, preReqs : [], nextPerk: -1,
    description : "You strengthened your shield arm and trained to parry blows a little. Thus you can block somewhat better."},
-   //29
-  {name : "Experienced Blocking", skill : 2, skillReq : 20,
-   xPos : 150/3, yPos : 222/4, preReqs : [28], nextPerk: -1,
-   description : "With weapon or shield you can block almost any blow with rock-solid confidence. Additionally, when blocking a hit you feel the adrenaline rushing through your veins, recovering a small amount of stamina."},
-   //30
-  {name : "Strong Grip", skill : 2, skillReq : 15,
-   xPos : 30/3, yPos : 239/4, preReqs : [28], nextPerk: -1,
-   description : "You hold on to your shield like you would hold on to your life. Blocking is even more effective and your equipped shield weighs less."},
-   //31
-  {name : "Elemental Protection", skill : 2, skillReq : 50,
-   xPos : 55/3, yPos : 115/4, preReqs : [30], nextPerk: -1,
-   description : "You've learned how to block damaging spells so that you can now<br> increase your resistance against them when blocking with a shield."},
-   //32
-  {name : "Defensive Stance", skill : 2, skillReq : 75,
-   xPos : 103/3, yPos : 60/4, preReqs : [31], nextPerk: -1,
-   description : "You have honed your defensive movements to perfection. Therefore, blocking incoming attacks will no longer slow you down."},
-   //33
-  {name : "Powerful Bashes", skill : 2, skillReq : 25,
-   xPos : 250/3, yPos : 239/4, preReqs : [28], nextPerk: -1,
-   description : "By gathering your strength for a short while, you can perform a much more powerful bash. Bashing an enemy like this with your shield or the pommel of your weapon will likely put him off balance."},
-   //34
-  {name : "Overpowering Bashes", skill : 2, skillReq : 50,
-   xPos : 250/3, yPos : 175/4, preReqs : [33], nextPerk: -1,
-   description : "When you put all of your power into your shield bashes, you will often overpower your foes. They will be staggered much more now and likely will even trip and fall."},
-   //35
-  {name : "Disarming Bash", skill : 2, skillReq : 75,
-   xPos : 225/3, yPos : 75/4, preReqs : [34], nextPerk: -1,
-   description : "Sometimes, when you put all your strength into your bashes your foes drop their weapon because of the pain."},
-   //36
-  {name : "Unstoppable Charge", skill : 2, skillReq : 100,
-   xPos : 150/3, yPos : 30/4, preReqs : [35,32], nextPerk: -1,
-   description : "When bull rushing with your shield raised, you are a tremendous force to deal with. In addition to likely being knocked down, your unfortunate enemies will also suffer serious wounds from the impact itself."},
    //37
+  {name : "Experienced<br>Blocking", skill : 2, skillReq : 20,
+   xPos : 100/3, yPos : 222/4, preReqs : [36], nextPerk: -1,
+   description : "With weapon or shield you can block almost any blow with rock-solid confidence. Additionally, when blocking a hit you feel the adrenaline rushing through your veins, recovering a small amount of stamina."},
+   //38
+  {name : "Strong Grip", skill : 2, skillReq : 15,
+   xPos : 30/3, yPos : 239/4, preReqs : [36], nextPerk: -1,
+   description : "You have honed your defensive movements to perfection. Therefore, blocking will no longer slow you down, and your shield is more protective."},
+   //39
+  {name : "Elemental Protection", skill : 2, skillReq : 50,
+   xPos : 55/3, yPos : 115/4, preReqs : [38], nextPerk: -1,
+   description : "You've learned how to block damaging spells so that you can now<br> increase your resistance against them when blocking with a shield."},
+   //40
+  {name : "Defensive Stance", skill : 2, skillReq : 75,
+   xPos : 103/3, yPos : 60/4, preReqs : [39], nextPerk: -1,
+   description : "You have honed your defensive movements to perfection. Therefore, blocking incoming attacks will no longer slow you down."},
+   //41
+  {name : "Powerful Bashes", skill : 2, skillReq : 25,
+   xPos : 250/3, yPos : 239/4, preReqs : [36], nextPerk: -1,
+   description : "By gathering your strength for a short while, you can perform a much more powerful bash. Bashing an enemy like this with your shield or the pommel of your weapon will likely put him off balance."},
+   //42
+  {name : "Overpowering Bashes", skill : 2, skillReq : 50,
+   xPos : 250/3, yPos : 175/4, preReqs : [41], nextPerk: -1,
+   description : "When you put all of your power into your shield bashes, you will often overpower your foes. They will be staggered much more now and likely will even trip and fall."},
+   //43
+  {name : "Disarming Bash", skill : 2, skillReq : 75,
+   xPos : 225/3, yPos : 75/4, preReqs : [42], nextPerk: -1,
+   description : "Sometimes, when you put all your strength into your bashes your foes drop their weapon because of the pain."},
+   //44
+  {name : "Unstoppable Charge", skill : 2, skillReq : 100,
+   xPos : 150/3, yPos : 30/4, preReqs : [43,40], nextPerk: -1,
+   description : "When bull rushing with your shield raised, you are nearly invulnerable to physical and elemental damage. In addition to likely being knocked down, enemies will also suffer serious wounds from the impact itself."},
+   //45
+  {name : "Shield Strike", skill : 2, skillReq : 25,
+   xPos : 170/3, yPos : 222/4, preReqs : [36], nextPerk: 46,
+   description : "You can use your shield more offensively, using it as a dealy weapon. Shield bash damage x 1.5, fortify block increases shield bash damage, -3 shield bash stamina cost."},
+   //46
+  {name : "Shield Strike", skill : 2, skillReq : 50,
+   xPos : 170/3, yPos : 222/4, preReqs : [45], nextPerk: 47,
+   description : "You can use your shield more offensively, using it as a dealy weapon. Shield bash damage x 1.75, fortify block increases shield bash damage, -6 shield bash stamina cost."},
+   //47
+  {name : "Shield Strike", skill : 2, skillReq : 75,
+   xPos : 170/3, yPos : 222/4, preReqs : [45], nextPerk: -1,
+   description : "You can use your shield more offensively, using it as a dealy weapon. Shield bash damage x 2, fortify block increases shield bash damage, -10 shield bash stamina cost."},
+   //48
   {name : "Novice<br>Conjuration", skill : 3, skillReq : 0,
    xPos : 216/4, yPos : 354/4, preReqs : [], nextPerk: -1,
    description : "You've taught yourself a few Novice level spells and learned how to cast them with decreased effort while your newfound knowledge also allows you to augment all Conjuration spells."},
-  //38
+  //49
   {name : "Apprentice<br>Conjuration", skill : 3, skillReq : 25,
-   xPos : 354/4, yPos : 231/4, preReqs : [37], nextPerk: -1,
+   xPos : 354/4, yPos : 231/4, preReqs : [48], nextPerk: -1,
    description : "By pursuing your apprenticeship in Conjuration, you've gained knowledge of Apprentice level spells which you now augment while casting them with less effort."},
-  //39
+  //50
   {name : "Adept<br>Conjuration", skill : 3, skillReq : 50,
-   xPos : 365/4, yPos : 176/4, preReqs : [38], nextPerk: -1,
+   xPos : 365/4, yPos : 176/4, preReqs : [49], nextPerk: -1,
    description : "By advancing further into the school of Conjuration, you've gained some Adept level spells and learned how to augment and cast spells of this rank more easily."},
-  //40
-  {name : "Expert<br>Conjuration", skill : 3, skillReq : 75,
-   xPos : 357/4, yPos : 122/4, preReqs : [39], nextPerk: -1,
-   description : "You've unlocked almost every secret in the school of Conjuration and you've acquired some Expert level spells. You can now cast spells of this level easier and augment them to an almost otherworldly extent."},
-  //41
-  {name : "Master<br>Conjuration", skill : 3, skillReq : 100,
-   xPos : 342/4, yPos : 50/4, preReqs : [40], nextPerk: -1,
-   description : "Your knowledge of Conjuration has become all-encompassing. You taught yourself a Master level spell and you can cast the most complex spells from this school with less effort while augmenting them beyond mortal limits."},
-   //42
-  {name : "Mystic<br>Binding", skill : 3, skillReq : 25,
-   xPos : 272/4, yPos : 249/4, preReqs : [37], nextPerk: -1,
-   description : "You've become very skilled in binding weapon-shaped daedra from Oblivion. Thereby, bound weapons are stronger and longer-lasting. Bound arrows will penetrate armor more easily."},
-   //43
-  {name : "Mystic<br>Maelstrom", skill : 3, skillReq : 50,
-   xPos : 292/4, yPos : 164/4, preReqs : [42], nextPerk: -1,
-   description : "The weapon-shaped Daedra you conjure now directly cut into their victims' souls, thereby making them vulnerable to soul gems."},
-   //44
-  {name : "Mystic<br>Banishment", skill : 3, skillReq : 75,
-   xPos : 275/4, yPos : 112/4, preReqs : [43], nextPerk: -1,
-   description : "Your bound weapons are now able to send summoned creatures back into the waters of Oblivion and to turn the undead."},
-   //45
-  {name : "Mystic<br>Disruption", skill : 3, skillReq : 100,
-   xPos : 261/4, yPos : 60/4, preReqs : [44], nextPerk: -1,
-   description : "You've perfected your invocations of summoning weapon-shaped daedra by making them bypass a part of any enemy's armor."},
-   //46
-  {name : "Necromancy", skill : 3, skillReq : 25,
-   xPos : 220/4, yPos : 218/4, preReqs : [37], nextPerk: -1,
-   description : "You've developed a knack for making the dead serve your commands. Therefore, all spells that summon or raise the dead and ghosts last longer and can raise more powerful entities."},
-   //47
-  {name : "Ritualism", skill : 3, skillReq : 50,
-   xPos : 212/4, yPos : 153/4, preReqs : [46], nextPerk: -1,
-   description : "Your knowledge of the realms of the dead surpasses that of many and decreases the effort needed to raise or summon the dead and ghosts."},
-   //48
-  {name : "Dark<br>Infusion", skill : 3, skillReq : 75,
-   xPos : 181/4, yPos : 76/4, preReqs : [47], nextPerk: -1,
-   description : "By infusing your undead creations with dark energies, you are able to make them stronger and more resilient. You can even prevent your creations from decaying to dust."},
-   //49
-  {name : "Summoner's<br>Insight", skill : 3, skillReq : 25,
-   xPos : 172/4, yPos : 247/4, preReqs : [37], nextPerk: -1,
-   description : "You've learned how to empower Conjuration spells. Thus, you can now make them last longer in this realm."},
-   //50
-  {name : "Cognitive<br>Flexibility", skill : 3, skillReq : 50,
-   xPos : 150/4, yPos : 117/4, preReqs : [49], nextPerk: 51,
-   description : "You have practiced the mental ability of maintaining two summons at the same time. This power extends to controlling any type of conjured or conceived entity, even outside the school of Conjuration."},
   //51
-  {name : "Cognitive<br>Flexibility", skill : 3, skillReq : 100,
-   xPos : 150/4, yPos : 117/4, preReqs : [50], nextPerk: -1,
-   description : "You have mastered the art of Cognitive Flexibility, a trait of only the most accomplished Summoners throughout history. You can now control three summons, of any type, simultaneously."},
-   //52
-  {name : "Stabilized Binding", skill : 3, skillReq : 25,
-   xPos : 85/4, yPos : 221/4, preReqs : [37], nextPerk: -1,
-   description : "Having studied the barriers that divide the planes of existence, you can make your summoned daedra and spirits last longer in this realm."},
-  //53
-  {name : "Spiritual<br>Binding", skill : 3, skillReq : 35,
-   xPos : 98/4, yPos : 161/4, preReqs : [52], nextPerk: -1,
-   description : "Your knowledge of Oblivion's spiritual aspects increases the strength of all your summoned spirits."},
+  {name : "Expert<br>Conjuration", skill : 3, skillReq : 75,
+   xPos : 357/4, yPos : 122/4, preReqs : [50], nextPerk: -1,
+   description : "You've unlocked almost every secret in the school of Conjuration and you've acquired some Expert level spells. You can now cast spells of this level easier and augment them to an almost otherworldly extent."},
+  //52
+  {name : "Master<br>Conjuration", skill : 3, skillReq : 100,
+   xPos : 342/4, yPos : 50/4, preReqs : [51], nextPerk: -1,
+   description : "Your knowledge of Conjuration has become all-encompassing. You taught yourself a Master level spell and you can cast the most complex spells from this school with less effort while augmenting them beyond mortal limits."},
+   //53
+  {name : "Mystic<br>Binding", skill : 3, skillReq : 25,
+   xPos : 272/4, yPos : 249/4, preReqs : [48], nextPerk: -1,
+   description : "You've become very skilled in binding weapon-shaped daedra from Oblivion. Thereby, bound weapons are stronger and longer-lasting."},
    //54
-  {name : "Extended<br>Binding", skill : 3, skillReq : 50,
-   xPos : 53/4, yPos : 131/4, preReqs : [52], nextPerk: -1,
-   description : "You've perfected your spells' formulae to summon daedra and spirits, and are now able to cast them more easily and further away."},
+  {name : "Mystic<br>Maelstrom", skill : 3, skillReq : 50,
+   xPos : 292/4, yPos : 164/4, preReqs : [53], nextPerk: -1,
+   description : "You've improved your ability to bind weapon-shaped daedra from Oblivion. Thereby, bound weapons are stronger and longer-lasting."},
    //55
-  {name : "Elemental Binding", skill : 3, skillReq : 75,
-   xPos : 76/4, yPos : 55/4, preReqs : [54], nextPerk: -1,
+  {name : "Mystic<br>Banishment", skill : 3, skillReq : 75,
+   xPos : 275/4, yPos : 112/4, preReqs : [54], nextPerk: -1,
+   description : "You've greatly improved your ability to bind weapon-shaped daedra from Oblivion. Thereby, bound weapons are stronger and longer-lasting."},
+   //56
+  {name : "Mystic<br>Disruption", skill : 3, skillReq : 100,
+   xPos : 261/4, yPos : 60/4, preReqs : [55], nextPerk: -1,
+   description : "You've perfected your ability to bind weapon-shaped daedra from Oblivion. Thereby, bound weapons are stronger and longer-lasting."},
+   //57
+  {name : "Necromancy", skill : 3, skillReq : 25,
+   xPos : 220/4, yPos : 218/4, preReqs : [48], nextPerk: -1,
+   description : "You've developed a knack for making the dead serve your commands. Therefore, all spells that summon or raise the dead and ghosts last longer and can raise more powerful entities."},
+   //58
+  {name : "Ritualism", skill : 3, skillReq : 50,
+   xPos : 212/4, yPos : 153/4, preReqs : [57], nextPerk: -1,
+   description : "Your knowledge of the realms of the dead surpasses that of many and decreases the effort needed to raise or summon the dead and ghosts."},
+   //59
+  {name : "Dark<br>Infusion", skill : 3, skillReq : 75,
+   xPos : 181/4, yPos : 76/4, preReqs : [58], nextPerk: -1,
+   description : "By infusing your undead creations with dark energies, you are able to make them stronger and more resilient. You can even prevent your creations from decaying to dust."},
+   //60
+  {name : "Summoner's<br>Insight", skill : 3, skillReq : 25,
+   xPos : 172/4, yPos : 247/4, preReqs : [48], nextPerk: -1,
+   description : "You've learned how to empower Conjuration spells. Thus, you can now make them last longer in this realm."},
+   //61
+  {name : "Cognitive<br>Flexibility", skill : 3, skillReq : 50,
+   xPos : 150/4, yPos : 117/4, preReqs : [60], nextPerk: 62,
+   description : "You have practiced the mental ability of maintaining two summons at the same time. This power extends to controlling any type of conjured or conceived entity, even outside the school of Conjuration."},
+  //62
+  {name : "Cognitive<br>Flexibility", skill : 3, skillReq : 100,
+   xPos : 150/4, yPos : 117/4, preReqs : [61], nextPerk: -1,
+   description : "You have mastered the art of Cognitive Flexibility, a trait of only the most accomplished Summoners throughout history. You can now control three summons, of any type, simultaneously."},
+   //63
+  {name : "Stabilized<br>Binding", skill : 3, skillReq : 25,
+   xPos : 85/4, yPos : 221/4, preReqs : [48], nextPerk: -1,
+   description : "Having studied the barriers that divide the planes of existence, you can make your summoned daedra and spirits last longer in this realm."},
+  //64
+  {name : "Spiritual<br>Binding", skill : 3, skillReq : 35,
+   xPos : 98/4, yPos : 161/4, preReqs : [63], nextPerk: -1,
+   description : "Your knowledge of Oblivion's spiritual aspects increases the strength of all your summoned spirits."},
+   //65
+  {name : "Extended<br>Binding", skill : 3, skillReq : 50,
+   xPos : 53/4, yPos : 131/4, preReqs : [63], nextPerk: -1,
+   description : "You've perfected your spells' formulae to summon daedra and spirits, and are now able to cast them more easily and further away."},
+   //66
+  {name : "Elemental<br>Binding", skill : 3, skillReq : 75,
+   xPos : 76/4, yPos : 70/4, preReqs : [65], nextPerk: -1,
    description : "Your knowledge of Oblivion's elemental aspects increases the strength of all your summoned Atronachs while the highest level rituals will conjure Thralls that are immune to Banishment and Control spells."},
-  //56
+  //67
   {name : "Novice Destruction", skill : 4, skillReq : 0,
    xPos : 176/4, yPos : 345/4, preReqs : [], nextPerk: -1,
    description : "You've taught yourself a few Novice level spells and learned how to cast them with decreased effort while your newfound knowledge also allows you to augment all Destruction spells."},
-  //57
-  {name : "Pyromancy", skill : 4, skillReq : 25,
-   xPos : 89/4, yPos : 219/4, preReqs : [56], nextPerk: 58,
-   description : "You now are able to intensify the heat of your fire spells. Thus, they now deal increased damage."},
-   //58
-  {name : "Pyromancy", skill : 4, skillReq : 50,
-   xPos : 89/4, yPos : 219/4, preReqs : [57], nextPerk: -1,
-   description : "Your fire spells burn with almost otherworldly heat and consume earth and flesh with terrifying ease."},
-   //59
-  {name : "Cremation", skill : 4, skillReq : 75,
-   xPos : 82/4, yPos : 143/4, preReqs : [57], nextPerk: -1,
-   description : "Your higher level fire spells burn so ferociously that foes are set ablaze, often causing them to run away in gruesome agony as their very skin becomes molten."},
-   //60
-  {name : "Fire<br>Mastery", skill : 4, skillReq : 100,
-   xPos : 80/4, yPos : 52/4, preReqs : [59], nextPerk: -1,
-   description : "Your fascination for fire now grants you a natural resistance to it, while also increasing all your fire spells' power even further."},
-   //61
-  {name : "Cyromancy", skill : 4, skillReq : 25,
-   xPos : 145/4, yPos : 196/4, preReqs : [56], nextPerk: 62,
-   description : "You now are able to improve your ice spells and thereby increase their effectiveness."},
-   //62
-  {name : "Cyromancy", skill : 4, skillReq : 50,
-   xPos : 145/4, yPos : 196/4, preReqs : [61], nextPerk: -1,
-   description : "Your ice spells freeze even air in a trice and make the harsh winters of Skyrim look like a refreshing breeze."},
-   //63
-  {name : "Deep Freeze", skill : 4, skillReq : 75,
-   xPos : 145/4, yPos : 109/4, preReqs : [61], nextPerk: -1,
-   description : "Your higher level ice spells are colder than Skyrim's most ferocious blizzards, causing them to freeze foes with low resistance to frost."},
-  //64
-  {name : "Frost<br>Mastery", skill : 4, skillReq : 100,
-   xPos : 153/4, yPos : 41/4, preReqs : [63], nextPerk: -1,
-   description : "Your understanding of all that is cold grants you a natural resistance to it, while  increasing all your frost spells' power even further."},
-   //65
-  {name : "Electromancy", skill : 4, skillReq : 25,
-   xPos : 210/4, yPos : 170/4, preReqs : [56], nextPerk: 66,
-   description : "You can now energize your lightning spells more effectively, causing them to deal more damage."},
-   //66
-  {name : "Electromancy", skill : 4, skillReq : 50,
-   xPos : 210/4, yPos : 170/4, preReqs : [65], nextPerk: -1,
-   description : "Compared to your lightning spells, the worst tempests would look like a mild summer breeze."},
-   //67
-  {name : "Electrostatic<br>Discharge", skill : 4, skillReq : 75,
-   xPos : 213/4, yPos : 93/4, preReqs : [65], nextPerk: -1,
-   description : "Your lightning strikes pass through body and mind with thundering intensity. Thus, they now vaporize vast amounts of Magicka off your targets."},
-   //68
-  {name : "Lightning<br>Mastery", skill : 4, skillReq : 100,
-   xPos : 220/4, yPos : 25/4, preReqs : [67], nextPerk: -1,
-   description : "Your aptitude with lightning grants you a natural resistance to it, while also increasing all your shock spells' power even further."},
-   //69
-  {name : "Apprentice<br>Destruction", skill : 4, skillReq : 25,
-   xPos : 255/4, yPos : 255/4, preReqs : [56], nextPerk: -1,
+  //68
+   {name : "Apprentice<br>Destruction", skill : 4, skillReq : 25,
+   xPos : 255/4, yPos : 255/4, preReqs : [67], nextPerk: -1,
    description : "By pursuing your apprenticeship in Destruction, you've gained knowledge of Apprentice level spells which you now augment while casting them with less effort."},
-   //70
-  {name : "Rune Mastery", skill : 4, skillReq : 50,
-   xPos : 302/4, yPos : 204/4, preReqs : [69], nextPerk: -1,
-   description : "By studying the arcane symbols of all three elements, you have developed more powerful rune spells and have unlocked the secret of maintaining three active runes instead of just one."},
-   //71
+   //69
   {name : "Adept<br>Destruction", skill : 4, skillReq : 50,
-   xPos : 270/4, yPos : 130/4, preReqs : [69], nextPerk: -1,
+   xPos : 270/4, yPos : 130/4, preReqs : [68], nextPerk: -1,
    description : "By advancing further into the school of Destruction, you've gained some Adept level spells and learned how to augment and cast spells of this rank more easily."},
-   //72
+   //70
   {name : "Expert<br>Destruction", skill : 4, skillReq : 75,
-   xPos : 290/4, yPos : 60/4, preReqs : [71], nextPerk: -1,
+   xPos : 290/4, yPos : 60/4, preReqs : [69], nextPerk: -1,
    description : "You've unlocked almost every secret in the school of Destruction and you've acquired some Expert level spells. You can now cast spells of this level easier and augment them to an almost otherworldly extent."},
-   //73
+   //71
   {name : "Master<br>Destruction", skill : 4, skillReq : 100,
-   xPos : 300/4, yPos : 15/4, preReqs : [72], nextPerk: -1,
+   xPos : 300/4, yPos : 15/4, preReqs : [70], nextPerk: -1,
    description : "Your knowledge of Destruction has become all-encompassing. You taught yourself a Master level spell and you can cast the most complex spells from this school with less effort while augmenting them beyond mortal limits."},
+   //72
+  {name : "Arcane<br>Assassin", skill : 4, skillReq : 25,
+   xPos : 40/4, yPos : 300/4, preReqs : [67], nextPerk: 73,
+   description : "You can control your Destruction spells better, dealing more damage to unwary targets. Destruction spell magnitude x 1.15 on sneak attack, destruction spells are silent when out of combat."},
+   //73
+  {name : "Arcane<br>Assassin", skill : 4, skillReq : 50,
+   xPos : 40/4, yPos : 300/4, preReqs : [72], nextPerk: 74,
+   description : "You can control your Destruction spells better, dealing more damage to unwary targets. Destruction spell magnitude x 1.3 on sneak attack, destruction spells are silent when out of combat."},
    //74
-  {name : "Empowered<br>Elements", skill : 4, skillReq : 25,
-   xPos : 294/4, yPos : 316/4, preReqs : [56], nextPerk: -1,
-   description : "You learned how to empower Destruction spells. Thus, you're able to overcharge their effects."},
+  {name : "Arcane<br>Assassin", skill : 4, skillReq : 75,
+   xPos : 40/4, yPos : 300/4, preReqs : [73], nextPerk: -1,
+   description : "You can control your Destruction spells better, dealing more damage to unwary targets. Destruction spell magnitude x 1.5 on sneak attack, destruction spells are silent when out of combat."},
    //75
-  {name : "Impact", skill : 4, skillReq : 50,
-   xPos : 360/4, yPos : 255/4, preReqs : [74], nextPerk: -1,
-   description : "By intensifying the force of most of your overcharged Destruction spells, you're now capable of staggering your foes."},
+   {name : "Geomancy", skill : 4, skillReq : 25,
+   xPos : 45/4, yPos : 260/4, preReqs : [67], nextPerk: 76,
+   description : "You now are able to intensify the strength of your earth spells. Thus, they now deal increased damage."},
    //76
-  {name : "Enchanter's Insight", skill : 5, skillReq : 0,
-   xPos : 183/4, yPos : 342/4, preReqs : [], nextPerk: 77,
-   description : "You've acquired fundamental insights into how matter and magic intertwine. Thus, you can now infuse items with arcane energy at an enchanter and use soul gems to recharge enchanted items of all kinds."},
+   {name : "Geomancy", skill : 4, skillReq : 50,
+   xPos : 45/4, yPos : 260/4, preReqs : [75], nextPerk: -1,
+   description : "You now are able to greatly intensify the strength of your earth spells. Thus, they now deal increased damage."},
    //77
-  {name : "Enchanter's Insight", skill : 5, skillReq : 20,
-   xPos : 183/4, yPos : 342/4, preReqs : [76], nextPerk: -1,
-   description : "Your advanced knowledge of arcane energy allows you to improve all your enchantments even more."},
+   {name : "Knockout", skill : 4, skillReq : 75,
+   xPos : 45/4, yPos : 200/4, preReqs : [75], nextPerk: -1,
+   description : "Your higher level earth spells are so strong that foes are sometimes knocked out."},
    //78
-  {name : "Soul Gem Mastery", skill : 5, skillReq : 25,
-   xPos : 246/4, yPos : 218/4, preReqs : [76], nextPerk: -1,
-   description : "You've learned how to draw more energy from soul gems and are now able to craft them at a smelter by transmuting and melting certain minerals."},
+   {name : "Earth Mastery", skill : 4, skillReq : 100,
+   xPos : 45/4, yPos : 100/4, preReqs : [77], nextPerk: -1,
+   description : "Your fascination for geomancy now grants you a natural resistance to physical damage, while also increasing all your earth spells' power even further."},
    //79
-  {name : "Arcane Experimentation", skill : 5, skillReq : 50,
-   xPos : 259/4, yPos : 176/4, preReqs : [78], nextPerk: -1,
-   description : "Your studies have enabled you to research unique enchantments of your own and to craft better staves at the forge."},
+  {name : "Pyromancy", skill : 4, skillReq : 25,
+   xPos : 89/4, yPos : 219/4, preReqs : [67], nextPerk: 80,
+   description : "You now are able to intensify the heat of your fire spells. Thus, they now deal increased damage."},
    //80
-  {name : "Artificer's Insight", skill : 5, skillReq : 75,
-   xPos : 264/4, yPos : 80/4, preReqs : [79], nextPerk: -1,
-   description : "You could fill grimoires with your newfound knowledge that allows you to create even better enchantments and staves."},
+  {name : "Pyromancy", skill : 4, skillReq : 50,
+   xPos : 89/4, yPos : 219/4, preReqs : [79], nextPerk: -1,
+   description : "Your fire spells burn with almost otherworldly heat and consume earth and flesh with terrifying ease."},
    //81
-  {name : "Elemental Lore", skill : 5, skillReq : 25,
-   xPos : 138/4, yPos : 219/4, preReqs : [76], nextPerk: -1,
-   description : "You've learned how to tame the elements most efficiently.<br> Thus, all elemental enchantments are stronger."},
+  {name : "Cremation", skill : 4, skillReq : 75,
+   xPos : 82/4, yPos : 143/4, preReqs : [79], nextPerk: -1,
+   description : "Your higher level fire spells burn so ferociously that foes are set ablaze, often causing them to run away in gruesome agony as their very skin becomes molten."},
    //82
-  {name : "Corpus Lore", skill : 5, skillReq : 50,
-   xPos : 150/4, yPos : 150/4, preReqs : [81], nextPerk: -1,
-   description : "You've become skilled in using enchantments to strengthen mind and body. Thus, all such enchantments are stronger."},
+  {name : "Fire<br>Mastery", skill : 4, skillReq : 100,
+   xPos : 80/4, yPos : 52/4, preReqs : [81], nextPerk: -1,
+   description : "Your fascination for fire now grants you a natural resistance to it, while also increasing all your fire spells' power even further."},
    //83
-  {name : "Skill Lore", skill : 5, skillReq : 75,
-   xPos : 191/4, yPos : 93/4, preReqs : [82], nextPerk: -1,
-   description : "You've become a master of infusing enchantments that transfer knowledge and skill to the user, making all such ones stronger."},
+  {name : "Cyromancy", skill : 4, skillReq : 25,
+   xPos : 145/4, yPos : 196/4, preReqs : [67], nextPerk: 84,
+   description : "You now are able to improve your ice spells and thereby increase their effectiveness."},
    //84
-  {name : "Enchantment Mastery", skill : 5, skillReq : 100,
-   xPos : 258/4, yPos : 35/4, preReqs : [83,80], nextPerk: -1,
-   description : "You've found a way to bind even more energy into inanimate matter. Thus, you can bend the Law of Firsts to an extent and even create Daedric staves. Additionally, all enchanted items also consume less energy."},
+  {name : "Cyromancy", skill : 4, skillReq : 50,
+   xPos : 145/4, yPos : 196/4, preReqs : [83], nextPerk: -1,
+   description : "Your ice spells freeze even air in a trice and make the harsh winters of Skyrim look like a refreshing breeze."},
    //85
+  {name : "Deep Freeze", skill : 4, skillReq : 75,
+   xPos : 145/4, yPos : 109/4, preReqs : [83], nextPerk: -1,
+   description : "Your higher level ice spells are colder than Skyrim's most ferocious blizzards, causing them to freeze foes with low resistance to frost."},
+  //86
+  {name : "Frost<br>Mastery", skill : 4, skillReq : 100,
+   xPos : 153/4, yPos : 41/4, preReqs : [85], nextPerk: -1,
+   description : "Your understanding of all that is cold grants you a natural resistance to it, while  increasing all your frost spells' power even further."},
+   //87
+  {name : "Electromancy", skill : 4, skillReq : 25,
+   xPos : 210/4, yPos : 170/4, preReqs : [67], nextPerk: 88,
+   description : "You can now energize your lightning spells more effectively, causing them to deal more damage."},
+   //88
+  {name : "Electromancy", skill : 4, skillReq : 50,
+   xPos : 210/4, yPos : 170/4, preReqs : [87], nextPerk: -1,
+   description : "Compared to your lightning spells, the worst tempests would look like a mild summer breeze."},
+   //89
+  {name : "Electrostatic<br>Discharge", skill : 4, skillReq : 75,
+   xPos : 213/4, yPos : 93/4, preReqs : [87], nextPerk: -1,
+   description : "Your lightning strikes pass through body and mind with thundering intensity. Thus, they now vaporize vast amounts of Magicka off your targets."},
+   //90
+  {name : "Lightning<br>Mastery", skill : 4, skillReq : 100,
+   xPos : 220/4, yPos : 25/4, preReqs : [89], nextPerk: -1,
+   description : "Your aptitude with lightning grants you a natural resistance to it, while also increasing all your shock spells' power even further."},
+   //91
+  {name : "Rune Mastery", skill : 4, skillReq : 50,
+   xPos : 302/4, yPos : 204/4, preReqs : [68], nextPerk: -1,
+   description : "By studying the arcane symbols of all three elements, you have developed more powerful rune spells and have unlocked the secret of maintaining three active runes instead of just one."},
+   //92
+  {name : "Empowered<br>Elements", skill : 4, skillReq : 25,
+   xPos : 294/4, yPos : 316/4, preReqs : [67], nextPerk: -1,
+   description : "You learned how to empower Destruction spells. Thus, you're able to overcharge their effects."},
+   //93
+  {name : "Impact", skill : 4, skillReq : 50,
+   xPos : 360/4, yPos : 255/4, preReqs : [92], nextPerk: -1,
+   description : "By intensifying the force of most of your overcharged Destruction spells, you're now capable of staggering your foes."},
+   //94
+  {name : "Enchanter's Insight", skill : 5, skillReq : 0,
+   xPos : 183/4, yPos : 342/4, preReqs : [], nextPerk: 95,
+   description : "You've acquired fundamental insights into how matter and magic intertwine. Thus, you can now infuse items with arcane energy at an enchanter and use soul gems to recharge enchanted items of all kinds."},
+   //95
+  {name : "Enchanter's Insight", skill : 5, skillReq : 20,
+   xPos : 183/4, yPos : 342/4, preReqs : [94], nextPerk: -1,
+   description : "Your advanced knowledge of arcane energy allows you to improve all your enchantments even more."},
+   //96
+  {name : "Soul Gem Mastery", skill : 5, skillReq : 25,
+   xPos : 246/4, yPos : 218/4, preReqs : [94], nextPerk: -1,
+   description : "You've learned how to draw more energy from soul gems and are now able to craft them at a smelter by transmuting and melting certain minerals."},
+   //97
+  {name : "Arcane Experimentation", skill : 5, skillReq : 50,
+   xPos : 259/4, yPos : 160/4, preReqs : [96], nextPerk: -1,
+   description : "Your studies have enabled you to research unique enchantments of your own and to craft better staves at the forge."},
+   //98
+  {name : "Artificer's Insight", skill : 5, skillReq : 75,
+   xPos : 264/4, yPos : 80/4, preReqs : [97], nextPerk: -1,
+   description : "You could fill grimoires with your newfound knowledge that allows you to create even better enchantments and staves."},
+   //99
+  {name : "Elemental Lore", skill : 5, skillReq : 25,
+   xPos : 138/4, yPos : 219/4, preReqs : [94], nextPerk: -1,
+   description : "You've learned how to tame the elements most efficiently.<br> Thus, all elemental enchantments are stronger."},
+   //100
+  {name : "Corpus Lore", skill : 5, skillReq : 50,
+   xPos : 150/4, yPos : 150/4, preReqs : [99], nextPerk: -1,
+   description : "You've become skilled in using enchantments to strengthen mind and body. Thus, all such enchantments are stronger."},
+   //101
+  {name : "Skill Lore", skill : 5, skillReq : 75,
+   xPos : 191/4, yPos : 93/4, preReqs : [100], nextPerk: -1,
+   description : "You've become a master of infusing enchantments that transfer knowledge and skill to the user, making all such ones stronger."},
+   //102
+  {name : "Enchantment Mastery", skill : 5, skillReq : 100,
+   xPos : 258/4, yPos : 35/4, preReqs : [101,98], nextPerk: -1,
+   description : "You've found a way to bind even more energy into inanimate matter. Thus, you can bend the Law of Firsts to an extent and even create Daedric staves. Additionally, all enchanted items also consume less energy."},
+   //103
+  {name : "Arcane<br>Artificery", skill : 5, skillReq : 25,
+   xPos : 280/4, yPos : 300/4, preReqs : [94], nextPerk: 104,
+   description : "Your understanding of enchantments allows you to use them more effectively and efficiently. Enchantment charge cost x 0.9, recharge amount x 1.1, scroll magnitude and duration x 1.1."},
+   //104
+  {name : "Arcane<br>Artificery", skill : 5, skillReq : 50,
+   xPos : 280/4, yPos : 300/4, preReqs : [103], nextPerk: 105,
+   description : "Your understanding of enchantments allows you to use them more effectively and efficiently. Enchantment charge cost x 0.8, recharge amount x 1.2, scroll magnitude and duration x 1.2."},
+   //105
+  {name : "Arcane<br>Artificery", skill : 5, skillReq : 75,
+   xPos : 280/4, yPos : 300/4, preReqs : [104], nextPerk: -1,
+   description : "Your understanding of enchantments allows you to use them more effectively and efficiently. Enchantment charge cost x 0.7, recharge amount x 1.3, scroll magnitude and duration x 1.3."},
+   //106
   {name : "Agility", skill : 6, skillReq : 0,
    xPos : 219/4, yPos : 345/4, preReqs : [], nextPerk: -1,
    description : "After some training you are now much more confident in your evasive movements. Your light armor and clothes will now hinder your movements less and you take less damage from falling."},
-   //86
-  {name : "Dodge", skill : 6, skillReq : 20,
-   xPos : 277/4, yPos : 254/4, preReqs : [85], nextPerk: -1,
-   description : "Your trained reflexes allow you to dodge incoming blows when wearing no heavy armor. By sprinting a step or two away, you can attempt to dodge hostile attacks."},
-   //87
-  {name : "Finesse", skill : 6, skillReq : 25,
-   xPos : 192/4, yPos : 240/4, preReqs : [85], nextPerk: -1,
-   description : "You inflict increased damage with all your power attacks, for you're able to hit more precisely."},
-   //88
-  {name : "Dexterity", skill : 6, skillReq : 50,
-   xPos : 128/4, yPos : 148/4, preReqs : [87], nextPerk: -1,
-   description : "You are able to balance your weapon better. Thus, you can decrease the effort to execute power attacks."},
-   //89
-  {name : "Agile Spellcasting", skill : 6, skillReq : 50,
-   xPos : 115/4, yPos : 193/4, preReqs : [88], nextPerk: -1,
+   //107
+  {name : "Athletics", skill : 6, skillReq : 25,
+   xPos : 115/4, yPos : 345/4, preReqs : [106], nextPerk: 108,
+   description : "You are more agile and can recover from exhaustion faster. +3% movement speed, +5% movement speed when sprinting or swimming, +15% stamina regeneration."},
+   //108
+  {name : "Athletics", skill : 6, skillReq : 50,
+   xPos : 115/4, yPos : 345/4, preReqs : [107], nextPerk: 109,
+   description : "You are more agile and can recover from exhaustion faster. +6% movement speed, +10% movement speed when sprinting or swimming, +30% stamina regeneration."},
+   //109
+  {name : "Athletics", skill : 6, skillReq : 75,
+   xPos : 115/4, yPos : 345/4, preReqs : [108], nextPerk: -1,
+   description : "You are more agile and can recover from exhaustion faster. +10% movement speed, +15% movement speed when sprinting or swimming, +50% stamina regeneration."},
+   //110
+  {name : "Unarmored", skill : 6, skillReq : 25,
+   xPos : 115/4, yPos : 300/4, preReqs : [106], nextPerk: 111,
+   description : "Having no weight on your body allows you to control your moves better in combat. While unarmored, +50 armor rating, -2% incoming physical damage, +2% movement speed, damage x 1.05"},
+   //111
+  {name : "Unarmored", skill : 6, skillReq : 50,
+   xPos : 115/4, yPos : 300/4, preReqs : [110], nextPerk: 112,
+   description : "Having no weight on your body allows you to control your moves better in combat. While unarmored, +100 armor rating, -4% incoming physical damage, +4% movement speed, damage x 1.1"},
+   //112
+  {name : "Unarmored", skill : 6, skillReq : 50,
+   xPos : 115/4, yPos : 300/4, preReqs : [111], nextPerk: -1,
+   description : "Having no weight on your body allows you to control your moves better in combat. While unarmored, +150 armor rating, -6% incoming physical damage, +6% movement speed, damage x 1.15"},
+   //113
+  {name : "Agile Spellcasting", skill : 6, skillReq : 25,
+   xPos : 115/4, yPos : 193/4, preReqs : [106], nextPerk: -1,
    description : "You learned how to avoid the limitations light armors bestow upon somatic spell components. Thus, you can cast spells in them unhindered."},
-   //90
+   //114
+  {name : "Finesse", skill : 6, skillReq : 25,
+   xPos : 192/4, yPos : 240/4, preReqs : [106], nextPerk: -1,
+   description : "You inflict increased damage with all your power attacks, for you're able to hit more precisely."},
+   //115
+  {name : "Dexterity", skill : 6, skillReq : 50,
+   xPos : 128/4, yPos : 148/4, preReqs : [114], nextPerk: -1,
+   description : "You are able to balance your weapon better. Thus, you can decrease the effort to execute power attacks."},
+   //116
   {name : "Windrunner", skill : 6, skillReq : 75,
-   xPos : 142/4, yPos : 92/4, preReqs : [88], nextPerk: -1,
+   xPos : 142/4, yPos : 92/4, preReqs : [115], nextPerk: -1,
    description : "Your light armor and clothes have become your second skin. You can move faster in them and running no longer exhausts you. Furthermore, your light armor hinders you even less than before."},
-   //91
+   //117
   {name : "Vexing Flanker", skill : 6, skillReq : 50,
-   xPos : 267/4, yPos : 159/4, preReqs : [87], nextPerk: -1,
+   xPos : 267/4, yPos : 159/4, preReqs : [114], nextPerk: -1,
    description : "You deal more damage with melee weapons while you are running, for you have learned to flank your enemies with ease. Furthermore, your reflexes will never betray you when an enemy attempts a lethal strike."},
-   //92
+   //118
   {name : "Combat Reflexes", skill : 6, skillReq : 75,
-   xPos : 237/4, yPos : 80/4, preReqs : [91,87], nextPerk: -1,
+   xPos : 237/4, yPos : 80/4, preReqs : [114,117], nextPerk: -1,
    description : "You've gained the ability to act faster in combat, though doing so will quickly exhaust you."},
-   //93
+   //119
   {name : "Meteoric Reflexes", skill : 6, skillReq : 100,
-   xPos : 195/4, yPos : 35/4, preReqs : [92,90], nextPerk: -1,
+   xPos : 195/4, yPos : 35/4, preReqs : [118,116], nextPerk: -1,
    description : "Your reflexes are lightning fast and grant you a chance to decrease the damage of incoming melee attacks while not wearing any Heavy Armor."},
-   //94
+   //120
+  {name : "Dodge", skill : 6, skillReq : 20,
+   xPos : 277/4, yPos : 254/4, preReqs : [106], nextPerk: -1,
+   description : "Your trained reflexes allow you to dodge incoming blows when wearing no heavy armor. By sprinting a step or two away, you can attempt to dodge hostile attacks."},
+   //115
   {name : "Conditioning", skill : 7, skillReq : 0,
    xPos : 249/4.5, yPos : 406/4.5, preReqs : [], nextPerk: -1,
    description : "You've accustomed yourself to using heavy armor, without getting tired just by wearing it."},

@@ -479,16 +479,16 @@ function drawActiveSkillTree(){
     let breakLocation = label.indexOf("<br>");
     
     if(breakLocation == -1){
-      theSVG.append(`<text font-size="16px" x="${curXPos}" y="${curYPos+25}" text-anchor="middle" fill="black" filter="url(#shadow)">${label}</text>`); 
-      theSVG.append(`<text font-size="16px" x="${curXPos}" y="${curYPos+25}" text-anchor="middle" fill="white">${label}</text>`);
+      //theSVG.append(`<text font-size="16px" x="${curXPos}" y="${curYPos+25}" text-anchor="middle" fill="black" filter="url(#shadow)">${label}</text>`); //
+      theSVG.append(`<text font-size="16px" x="${curXPos}" y="${curYPos+25}" text-anchor="middle" fill="black">${label}</text>`);
     }
     else{
       let parts = label.split("<br>");
-      theSVG.append(`<text font-size="16px" x="${curXPos}" y="${curYPos+25}" text-anchor="middle" fill="black" filter="url(#shadow)">${parts[0]}
-          <tspan x="${curXPos}" y="${curYPos+42}">${parts[1]}</tspan></text>`); 
+      //theSVG.append(`<text font-size="16px" x="${curXPos}" y="${curYPos+25}" text-anchor="middle" fill="black" filter="url(#shadow)">${parts[0]}
+          //<tspan x="${curXPos}" y="${curYPos+42}">${parts[1]}</tspan></text>`); 
           
           
-      theSVG.append(`<text font-size="16px" x="${curXPos}" y="${curYPos+25}" text-anchor="middle" fill="white">${parts[0]}<tspan x="${curXPos}" y="${curYPos+42}">${parts[1]}</tspan></text>`);
+      theSVG.append(`<text font-size="16px" x="${curXPos}" y="${curYPos+25}" text-anchor="middle" fill="black">${parts[0]}<tspan x="${curXPos}" y="${curYPos+42}">${parts[1]}</tspan></text>`);
     }
   }
   //Silly hack to actually draw the new SVG
@@ -521,17 +521,17 @@ function updateCircleAndLineColors(){
         //Then the connecting lines
         for(let j = 0; j < thePerk.preReqs.length; j++){
           if(characterHasPerk(Math.abs(thePerk.preReqs[j]))){
-            $(`#mainLine${i}to${Math.abs(thePerk.preReqs[j])}`).attr("stroke","yellow");
+            $(`#mainLine${i}to${Math.abs(thePerk.preReqs[j])}`).attr("stroke","green");
           }
           else{
-            $(`#mainLine${i}to${Math.abs(thePerk.preReqs[j])}`).attr("stroke","lightblue");
+            $(`#mainLine${i}to${Math.abs(thePerk.preReqs[j])}`).attr("stroke","grey");
           }
         }
       }
       else{
         $(`#activeCircle${i}`).attr("fill","url(#perkNotSelectedGrad)");
         for(let j = 0; j < thePerk.preReqs.length; j++){
-          $(`#mainLine${i}to${Math.abs(thePerk.preReqs[j])}`).attr("stroke","lightblue");
+          $(`#mainLine${i}to${Math.abs(thePerk.preReqs[j])}`).attr("stroke","grey");
         }
       } 
     }
@@ -544,18 +544,18 @@ function updateCircleAndLineColors(){
     
     let hasPerk = characterHasPerk(i);
     if(!hasPerk){
-      $(`#miniSkillCircle${i}`).attr("fill","lightblue");
+      $(`#miniSkillCircle${i}`).attr("fill","brown");
       for(let j = 0; j < thePerk.preReqs.length; j++){
-        $(`#miniLine${i}to${Math.abs(thePerk.preReqs[j])}`).attr("stroke","lightblue");
+        $(`#miniLine${i}to${Math.abs(thePerk.preReqs[j])}`).attr("stroke","brown");
       }
     }
     else{
       for(let j = 0; j < thePerk.preReqs.length; j++){
         if(characterHasPerk(Math.abs(thePerk.preReqs[j]))){
-          $(`#miniLine${i}to${Math.abs(thePerk.preReqs[j])}`).attr("stroke","yellow");
+          $(`#miniLine${i}to${Math.abs(thePerk.preReqs[j])}`).attr("stroke","green");
         }
         else{
-          $(`#miniLine${i}to${Math.abs(thePerk.preReqs[j])}`).attr("stroke","lightblue");
+          $(`#miniLine${i}to${Math.abs(thePerk.preReqs[j])}`).attr("stroke","brown");
         }
       }
       //Check if the circle should be red because we have a later perk in the
@@ -577,7 +577,7 @@ function updateCircleAndLineColors(){
         $(`#miniSkillCircle${i}`).attr("fill","red");
       }
       else {
-        $(`#miniSkillCircle${i}`).attr("fill","yellow");
+        $(`#miniSkillCircle${i}`).attr("fill","green");
       }
     }
   }
