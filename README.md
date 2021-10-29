@@ -1,2 +1,2 @@
-# nannerplanner
- Character Planner for Requiem
+# Serenity Build Planner
+ Character Planner for Serenity 2
