@@ -79,7 +79,7 @@ h1 {
   border: 1px solid black;
   display: flex;
   padding: 3px;
-  background-image:url("paperTex.jpg");
+  background-image:url("/images/paperTex.jpg");
   color:rgb(88, 54, 29);;
 }
 
