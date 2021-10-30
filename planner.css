@@ -79,7 +79,7 @@ h1 {
   border: 1px solid black;
   display: flex;
   padding: 3px;
-  background-image:url("images/paperTex.jpg");
+  background-image:url("https://github.com/airgiraffe/SerenityBuildPlanner/blob/dfc2b4f9f4e233ed76a82af8eac86e5d20457a43/images/paperTex.jpg");
   color:rgb(88, 54, 29);;
 }
 
