@@ -80,6 +80,7 @@ h1 {
   display: flex;
   padding: 3px;
   background-image:url("paperTex.jpg");
+  background-color: antiquewhite;
   color:rgb(88, 54, 29);;
 }
 
