@@ -1206,7 +1206,7 @@ const requiem402PerkData = {
         {
             name: "Nimble Fingers", skill: 12, skillReq: 0,
             xPos: 112 / 4, yPos: 337 / 4, preReqs: [194], nextPerk: -1,
-            description: "People shouldn't burden themselves with purses and kys. Luckily, you now can free them from these burdens more easily."
+            description: "People shouldn't burden themselves with purses and keys. Luckily, you now can free them from these burdens more easily."
         },
         //196
         {
