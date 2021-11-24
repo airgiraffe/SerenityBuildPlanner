@@ -383,7 +383,7 @@ function leftSideSkillClick(){
 }
 
 function updateLevelAndFreePerksDisplay(){
-  let theDiv = $("#freePerkCountDiv");
+  /*let theDiv = $("#freePerkCountDiv");
   let freePerks = calcFreePerks();
   theDiv.html(`Level ${characterData.level}, Free Perks: ${freePerks}`);
   if(freePerks < 0){
@@ -393,7 +393,7 @@ function updateLevelAndFreePerksDisplay(){
   else{
     theDiv.removeClass("redText");
     theDiv.addClass("whiteText");
-  }
+  }*/
 }
 
 function updateActiveSkillPanel(){

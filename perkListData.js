@@ -893,7 +893,7 @@ const requiem402PerkData = {
         //143
         {
             name: "Pain and Agony", skill: 8, skillReq: 50,
-            xPos: 240 / 3.5, yPos: 100 / 3.5, preReqs: [134], nextPerk: -1,
+            xPos: 240 / 3.5, yPos: 100 / 3.5, preReqs: [133], nextPerk: -1,
             description: "Having studied spells like Phantasmal Pain and Nightmare, you can now invoke terrible agony in your foes with ease. In addition, you also learned how to empower related spells."
         },
         //144
@@ -1055,19 +1055,19 @@ const requiem402PerkData = {
         //170
         {
             name: "Weapon Mastery", skill: 11, skillReq: 0,
-            xPos: 191 / 4, yPos: 351 / 4, preReqs: [], nextPerk: 171,
+            xPos: 190 / 4, yPos: 351 / 4, preReqs: [], nextPerk: 171,
             description: "Your improved fighting techniques allow you to swing one-handed weapons and fists with less effort and deal more damage. [damage x 1.2, -50% weapon weight penalties]"
         },
         //171
         {
             name: "Weapon Mastery", skill: 11, skillReq: 0,
-            xPos: 191 / 4, yPos: 351 / 4, preReqs: [170], nextPerk: -1,
+            xPos: 190 / 4, yPos: 351 / 4, preReqs: [170], nextPerk: -1,
             description: "Your improved fighting techniques increase your damage dealt with one-handed weapons and fists greatly. [damage x 1.4, -50% weapon weight penalties]"
         },
         //172
         {
             name: "Penetrating<br>Strikes", skill: 11, skillReq: 20,
-            xPos: 195 / 4, yPos: 274 / 4, preReqs: [170], nextPerk: -1,
+            xPos: 190 / 4, yPos: 60, preReqs: [170], nextPerk: -1,
             description: "Your power attacks with one-handed weapons are now devastating enough to penetrate enemy armor and less exhausting. [-50% power attack stamina cost, +5 armor penetration]"
         },
         //173
@@ -1091,19 +1091,19 @@ const requiem402PerkData = {
         //176
         {
             name: "War Axe<br>Focus", skill: 11, skillReq: 25,
-            xPos: 140 / 4, yPos: 200 / 4, preReqs: [172], nextPerk: 177,
+            xPos: 120 / 4, yPos: 200 / 4, preReqs: [172], nextPerk: 177,
             description: "You've become familiar with war axes, thereby increasing their damage and armor penetration. [damage x 1.05, +10 armor penetration]"
         },
         //177
         {
             name: "War Axe<br>Focus", skill: 11, skillReq: 50,
-            xPos: 140 / 4, yPos: 200 / 4, preReqs: [176], nextPerk: 178,
+            xPos: 120 / 4, yPos: 200 / 4, preReqs: [176], nextPerk: 178,
             description: "You've become an advanced axe fighter, further increasing their damage and armor penetration. [damage x 1.15, +20 armor penetration]"
         },
         //178
         {
             name: "War Axe<br>Focus", skill: 11, skillReq: 75,
-            xPos: 140 / 4, yPos: 200 / 4, preReqs: [178], nextPerk: -1,
+            xPos: 120 / 4, yPos: 200 / 4, preReqs: [178], nextPerk: -1,
             description: "Having mastered war axe combat, they start to feel like an almost natural extension of your arm. [damage x 1.3, +30 armor penetration]"
         },
         //179
@@ -1145,49 +1145,49 @@ const requiem402PerkData = {
         //185
         {
             name: "Powerful Strike", skill: 11, skillReq: 50,
-            xPos: 150 / 4, yPos: 150 / 4, preReqs: [172], nextPerk: -1,
+            xPos: 140 / 4, yPos: 150 / 4, preReqs: [172], nextPerk: -1,
             description: "You know how to put the maximum force into your power attacks which are now even more devastating. [power attack damage x 1.2]"
         },
         //186
         {
             name: "Powerful Charge", skill: 11, skillReq: 50,
-            xPos: 250 / 4, yPos: 150 / 4, preReqs: [172], nextPerk: -1,
+            xPos: 240 / 4, yPos: 150 / 4, preReqs: [172], nextPerk: -1,
             description: "You have learned to perform a leaping power attack while sprinting, inflicting terrible wounds. [unlocks sprinting power attack, -25% weapon weight penalties]"
         },
         //187
         {
             name: "Stunning Charge", skill: 11, skillReq: 100,
-            xPos: 200 / 4, yPos: 25 / 4, preReqs: [185, 186], nextPerk: -1,
+            xPos: 190 / 4, yPos: 25 / 4, preReqs: [185, 186], nextPerk: -1,
             description: "Putting your whole weight behind your charge, your forward power attacks now have enough momentum to knock down opponent. [forward power attacks can knock down]"
         },
         //188
         {
             name: "Balanced<br>Wielding", skill: 11, skillReq: 25,
-            xPos: 230 / 4, yPos: 310 / 4, preReqs: [171], nextPerk: 189,
+            xPos: 230 / 4, yPos: 70, preReqs: [171], nextPerk: 189,
             description: "With your off hand free you can balance your weapon better, swinging it even faster and stronger. [while having off hand free, damage x 1.06, 6% attack speed]"
         },
         //189
         {
             name: "Balanced<br>Wielding", skill: 11, skillReq: 50,
-            xPos: 230 / 4, yPos: 310 / 4, preReqs: [188], nextPerk: 190,
+            xPos: 230 / 4, yPos: 70, preReqs: [188], nextPerk: 190,
             description: "With your off hand free you can balance your weapon better, swinging it even faster and stronger. [while having off hand free, damage x 1.12, 12% attack speed]"
         },
         //190
         {
             name: "Balanced<br>Wielding", skill: 11, skillReq: 75,
-            xPos: 230 / 4, yPos: 310 / 4, preReqs: [189], nextPerk: -1,
+            xPos: 230 / 4, yPos: 70, preReqs: [189], nextPerk: -1,
             description: "With your off hand free you can balance your weapon better, swinging it even faster and stronger. [while having off hand free, damage x 1.2, 20% attack speed]"
         },
         //191
         {
             name: "Flurry", skill: 11, skillReq: 25,
-            xPos: 350 / 4, yPos: 300 / 4, preReqs: [171], nextPerk: 192,
+            xPos: 350 / 4, yPos: 87, preReqs: [171], nextPerk: 192,
             description: "When fighting with one-handed weapons, you are able to attack faster than normal. [+10% attack speed]"
         },
         //192
         {
             name: "Flurry", skill: 11, skillReq: 50,
-            xPos: 350 / 4, yPos: 300 / 4, preReqs: [191], nextPerk: -1,
+            xPos: 350 / 4, yPos: 87, preReqs: [191], nextPerk: -1,
             description: "When fighting with one-handed weapons, you're able to attack even faster. [+25% attack speed]"
         },
         //193
@@ -1911,6 +1911,24 @@ const requiem402PerkData = {
             name: "Shout Focus", skill: 16, skillReq: 0,
             xPos: 260 / 4, yPos: 60 / 4, preReqs: [311], nextPerk: -1,
             description: "You meditate on the Thu'um for deeper understanding of the Words of Power, making them more powerful. [shout magnitude and duration x 1.15, -30% shout cooldown]"
+        },
+        //313
+        {
+            name: "Armed<br>Spellcasting", skill: 11, skillReq: 25,
+            xPos: 70, yPos: 79, preReqs: [170], nextPerk: 314,
+            description: "While having your left hand empty or equipped with magic, 1H weapons are 5/10/15% faster. While having a 1H weapon on right hand, spell costs are reduced by 10/20/30%."
+        },
+        //314
+        {
+            name: "Armed<br>Spellcasting", skill: 11, skillReq: 50,
+            xPos: 70, yPos: 79, preReqs: [313], nextPerk: 315,
+            description: "While having your left hand empty or equipped with magic, 1H weapons are 5/10/15% faster. While having a 1H weapon on right hand, spell costs are reduced by 10/20/30%."
+        },
+        //315
+        {
+            name: "Armed<br>Spellcasting", skill: 11, skillReq: 75,
+            xPos: 70, yPos: 79, preReqs: [314], nextPerk: -1,
+            description: "While having your left hand empty or equipped with magic, 1H weapons are 5/10/15% faster. While having a 1H weapon on right hand, spell costs are reduced by 10/20/30%."
         },
     ]
 };
