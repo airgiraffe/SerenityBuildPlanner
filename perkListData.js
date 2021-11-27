@@ -1476,7 +1476,7 @@ const requiem402PerkData = {
         //240
         {
             name: "Draconic Blacksmithing", skill: 14, skillReq: 100,
-            xPos: 251 / 5, yPos: 15 / 3.5, preReqs: [-233, -238], nextPerk: -1,
+            xPos: 251 / 5, yPos: 15 / 3.5, preReqs: [-233, -237], nextPerk: -1,
             description: "The scales and bones of dragons are probably the hardest material to work with, but you've mastered even this art since you studied that old compendium."
         },
         //241
